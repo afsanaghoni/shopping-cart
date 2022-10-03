@@ -4,7 +4,7 @@ document.getElementById('case-plus-button').addEventListener('click', function (
     const productPrice = calculateProductPrice(productQuantity, 50);
 
     setTextDisplay('case-price', productPrice);
-    finalCalculation(productPrice);
+    finalCalculation();
 
 })
 
@@ -15,6 +15,6 @@ document.getElementById('case-minus-button').addEventListener('click', function 
     setInputDisplay('case-input', productQuantity);
     const productPrice = calculateProductPrice(productQuantity, 50);
     setTextDisplay('case-price', productPrice);
-    finalCalculation(productPrice)
+    finalCalculation()
 
 })

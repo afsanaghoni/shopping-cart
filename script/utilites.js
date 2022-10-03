@@ -22,11 +22,11 @@ function calculateProductPrice(productQuantity, price) {
     const productPrice = price * productQuantity;
     return productPrice;
 }
-function finalCalculation(productPrice) {
+function finalCalculation() {
 
-    const subtotalString = document.getElementById('subtotal').innerText;
-    let subtotal = parseInt(subtotalString);
-    subtotal = subtotal + productPrice;
+    const phonePrice = parseInt(document.getElementById('phone-price').innerText);
+    const casePrice = parseInt(document.getElementById('case-price').innerText);
+    const subtotal = phonePrice + casePrice;
     setTextDisplay('subtotal', subtotal);
     const tax = parseFloat((subtotal * .1).toFixed(2));
     setTextDisplay('tax', tax);

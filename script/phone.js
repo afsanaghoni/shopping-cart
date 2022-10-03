@@ -4,7 +4,7 @@ document.getElementById('phone-plus-button').addEventListener('click', function 
     const productPrice = calculateProductPrice(productQuantity, 1000);
 
     setTextDisplay('phone-price', productPrice);
-    finalCalculation(productPrice);
+    finalCalculation();
 })
 document.getElementById('phone-minus-button').addEventListener('click', function () {
     const productQuantity = getProductQuantity('phone-input', false);
@@ -12,5 +12,5 @@ document.getElementById('phone-minus-button').addEventListener('click', function
     const productPrice = calculateProductPrice(productQuantity, 1000);
 
     setTextDisplay('phone-price', productPrice);
-    finalCalculation(productPrice);
+    finalCalculation();
 })
